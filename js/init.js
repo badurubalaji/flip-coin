@@ -16,8 +16,7 @@ function flip() {
     
     isFlipping = true;
     const random = Math.floor(Math.random() * 4 + 9); 
-   // audio.play();
-    //audio.currentTime = 1;
+
     currentDegrees += 180 * random;
 
     if (currentDegrees % 360 === 0) {
@@ -29,8 +28,7 @@ function flip() {
     coin.style.transform = `rotateX(${currentDegrees}deg)`;
 
     setTimeout(() => {
-      //audio.pause();
-      //audio.currentTime = 1;
+ 
       result.classList.add("new");
       result.classList.add("pulse");
       console.log
